@@ -72,7 +72,8 @@ function App() {
     < Buttons  current={current} xindex={xindex} start={start}/>
     <button onClick={()=>currentNext(xindex)} style={{marginLeft:'5px',color:'#fff',height:'40px',width:'80px',background:'#034256',textTransform:'uppercase'}}>next</button>
     </div>
-     <table style={{fontFamily: 'arial, sans-serif',borderCollapse:'collapse', width: '90%',margin:'auto'}}>
+    <div style={{width:'100%',overflowX:'scroll'}}>
+    <table style={{fontFamily: 'arial, sans-serif',borderCollapse:'collapse', width: '90%',margin:'auto'}}>
        <thead style={{background:'#ccc',border:'1px solid #000',width:'30px',height:'20px'}}>
         <tr>
         <td>sl.No</td>
@@ -103,6 +104,7 @@ function App() {
    
       )})}
         </table>   
+    </div>
     
     
     </div>
